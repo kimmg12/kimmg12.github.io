@@ -1,0 +1,299 @@
+$grey_border: #c2c2c2;
+html {
+	font-size: 14px;
+}
+
+body {
+	background: #ECF0F3;
+}
+
+.copy {
+	line-height: 1;
+	text-align: right;
+}
+
+
+.icon,
+.is-title-vline {
+	//vertical-align: bottom;
+	line-height: 1;
+}
+
+
+.modal {
+	transform: scale(0.1);
+	opacity: 0;
+	transition: all .2s linear;
+
+	&.is-active {
+		opacity: 1;
+		transform: scale(1);
+	}
+	
+	.modal-card {
+		.modal-card-body {
+			img {
+				display: block;
+				width: 100%;
+				max-width: 100%;
+				border-radius: 3px;
+				margin: 20px auto;
+			}
+		}
+	}
+}
+
+
+
+//Layout Card
+.card {
+	height: 640px; // mCustomScrollbar setHeight: 640,
+
+	ul {
+		&.menu-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			> li > a {
+				border: 1px solid rgba(0, 0, 0, 0);
+				border-left: 2px solid $grey_border;
+				font-size: 1.3rem;
+				&:hover {
+					border-top: 1px solid $grey_border;
+					border-bottom: 1px solid $grey_border;
+					border-right: 1px solid $grey_border;
+				}
+				span {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		&.event-list {
+			display: block;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			.event {
+				> ul {
+					margin-left: 20px;
+				}
+
+				position: relative;
+				padding: 0 0 20px 25px;
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 5px;
+					bottom: -10px;
+					left: 4px;
+					width: 2px;
+					background: #c2c2c2;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 5px;
+					left: 0px;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background: #265CDC;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.lsk {
+	//article
+	padding: 30px 0;
+
+	.progress {
+		margin-bottom: 0.7rem;
+	}
+
+
+	&#sc-2 {
+
+		//포트폴리오
+		.portfolio {
+			overflow: hidden;
+			padding-left: 2px;
+			padding-right: 2px;
+
+			.mix {
+				float: left;
+				width: 32%;
+				margin: 0 4px;
+				border: 0;
+				border-radius: 3px;
+				margin-bottom: 1rem;
+				position: relative;
+
+				backface-visibility: hidden;
+				will-change: transform, opacity;
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+				transition: translate .18s, box-shadow .18s;
+				cursor: pointer;
+
+				&:hover {
+					box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+				}
+
+				> a {
+					position: absolute;
+					display: block;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					z-index: 999;
+					text-indent: -9999px;
+				}
+
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+
+				.portfolio-description {
+					padding: .5rem;
+
+					p {
+						line-height: 1.2rem;
+						margin: 0;
+
+						&.ti-subject {
+							color: #343434;
+							font-weight: bold;
+							margin-bottom: 6px;
+							text-overflow: ellipsis;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+.column .is-danger {
+	overflow: hidden;
+}
+
+
+/*
+
+
+body {
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+}
+
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+.hero.is-success {
+	background-color: transparent;
+}
+
+
+*/
+
+
+
+
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.modal-card {
+		width: 85%;
+	}
+	.lsk#sc-2 .portfolio .mix {
+		width: 45%;
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
+
+@media (max-width: 512px) {
+	
+		.lsk#sc-2 .portfolio .mix {
+		width: 100%;
+		margin: 0;
+			float: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

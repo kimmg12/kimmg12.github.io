@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+		"category": "green",
+		"title": "경기도청 홈페이지 리뉴얼",
+		"period": "2017.06 ~ 2016.08",
+    "teck": "워드프레스, 퍼블리싱, php, 자바스크립트",
+    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
+		"description": "2017년도 경기도청 홈페이지 콘텐츠 생산 관리사업의 과업중 하나인 대표사이트 리뉴얼 작업 입니다. 기존 홈페이지 디자인과 일부 기능들이 전면 개편되었기 때문에 그에 맞춰 테마를 새로 제작하게 되었습니다. 2019년도 현재 경기도청 홈페이지 디자인은 이때 완성된 디자인을 그대로 쓰고있습니다.<br>2017 웹어워드 지방자치기관분야 대상<br> http://www.i-award.or.kr/Web/Assess/FinalCandidateView.aspx?REG_SEQNO=7037",
+    "url": "https://gg.go.kr/",
+    "img1": "/img/PF_14.jpg",
+    "img2": "/img/id-1-1.png",
+    "img3": "https://via.placeholder.com/150/92c952"
+  },
+  {
+    "id": 2,
+		"category": "pink",
+		"title": "경기도청 외국어 홈페이지 유지보수",
+		"period": "2017.01 ~ 2018.01",
+    "teck": "워드프레스, 퍼블리싱, php, 자바스크립트",
+    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
+		"description": "2016년도 경기도청 외국어 사이트 고도화 작업 입니다. 워드프레스 프레임워크인 underscores 를 사용하여 제작되었습니다. 서브도메인별로 멀티사이트 기능을 이용했습니다.",
+    "url": "https://gg.go.kr/",
+    "img1": "/img/id-1-1.png",
+    "img2": "/img/img-10023.jpg",
+    "img3": "/img/img-10023-1.jpg"
+  },
+  {
+    "id": 2,
+		"category": "pink",
+		"title": "경기도청 외국어 홈페이지 리뉴얼",
+		"period": "2016.09 ~ 2016.10",
+    "teck": "워드프레스, 퍼블리싱, php, 자바스크립트",
+    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
+		"description": "2016년도 경기도청 외국어 사이트 고도화 작업 입니다. 워드프레스 프레임워크인 underscores 를 사용하여 제작되었습니다. 서브도메인별로 멀티사이트 기능을 이용했습니다.",
+    "url": "http://english.gg.go.kr/",
+    "img1": "/img/img-10023.jpg",
+    "img2": "/img/img-10023.jpg",
+    "img3": "/img/img-10023-1.jpg"
+  },
+  {
+    "id": 3,
+		"category": "blue",
+		"title": "3경기도청 홈페이지 리뉴얼",
+		"period": "2016.06 ~ 2016.07",
+    "teck": "워드프레스, 퍼블리싱, php, 자바스크립트",
+    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
+		"description": "경기도청 대표사이트 리뉴얼 작업(현재)어워드에서 대상 수상. 현재까지 유지 중",
+    "url": "https://templated.co/items/thumbnails/radius.jpg",
+    "img1": "https://templated.co/items/thumbnails/radius.jpg",
+    "img2": "https://via.placeholder.com/150/92c952",
+    "img3": "https://via.placeholder.com/150/92c952"
+  },
+  {
+    "id": 4,
+		"category": "green",
+		"title": "경기도 감염병관리 홈페이지 구축",
+		"period": "2016.03 ~ 2016.09",
+    "teck": "워드프레스, php, 자바스크립트",
+    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
+		"description": "경기도청 대표사이트 리뉴얼 작업(현재)어워드에서 대상 수상. 현재까지 유지 중",
+    "url": "https://templated.co/promos/thumbnails/cascade.jpg",
+    "img1": "/img/PF_21-1.jpg",
+    "img2": "https://via.placeholder.com/150/92c952",
+    "img3": "https://via.placeholder.com/150/92c952"
+  },
+	{
+    "id": 5,
+		"category": "green",
+		"title": "더넥스트스토리 경기도 모바일프랫폼 구축",
+		"period": "2016.06 ~ 2016.07",
+    "teck": "워드프레스, php, 자바스크립트",
+    "charge": "디자인, 퍼블리싱, 워드프레스 테마제작",
+		"description": "모바일 쇼셜 플랫폼으로 제작되었습니다. 네이버 포스트랑 비슷한 컨셉으로 sns담당 작가들이 포스트를 올릴 수 있도록 개발되었습니다. 워드프레스로 제작되었습니다. 2년간 서비스를 유지하다 현재는 서비스 종료된 프로젝트 입니다.",
+    "url": "",
+    "img1": "/img/tumb-nextstory.jpg",
+    "img2": "/img/n123.png",
+    "img3": "https://via.placeholder.com/150/92c952"
+  }
+]

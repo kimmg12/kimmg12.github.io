@@ -1,0 +1,231 @@
+/* line 2, D:/temp/mybulma3/css/portfolio.scss */
+html {
+  font-size: 14px; }
+
+/* line 6, D:/temp/mybulma3/css/portfolio.scss */
+body {
+  background: #ECF0F3; }
+
+/* line 10, D:/temp/mybulma3/css/portfolio.scss */
+.copy {
+  line-height: 1;
+  text-align: right; }
+
+/* line 16, D:/temp/mybulma3/css/portfolio.scss */
+.icon,
+.is-title-vline {
+  line-height: 1; }
+
+/* line 23, D:/temp/mybulma3/css/portfolio.scss */
+.modal {
+  transform: scale(0.1);
+  opacity: 0;
+  transition: all .2s linear; }
+  /* line 28, D:/temp/mybulma3/css/portfolio.scss */
+  .modal.is-active {
+    opacity: 1;
+    transform: scale(1); }
+  /* line 35, D:/temp/mybulma3/css/portfolio.scss */
+  .modal .modal-card .modal-card-body img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+    margin: 20px auto; }
+
+/* line 49, D:/temp/mybulma3/css/portfolio.scss */
+.card {
+  height: 640px; }
+  /* line 53, D:/temp/mybulma3/css/portfolio.scss */
+  .card ul.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    /* line 58, D:/temp/mybulma3/css/portfolio.scss */
+    .card ul.menu-list > li > a {
+      border: 1px solid transparent;
+      border-left: 2px solid #c2c2c2;
+      font-size: 1.3rem; }
+      /* line 62, D:/temp/mybulma3/css/portfolio.scss */
+      .card ul.menu-list > li > a:hover {
+        border-top: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
+        border-right: 1px solid #c2c2c2; }
+      /* line 67, D:/temp/mybulma3/css/portfolio.scss */
+      .card ul.menu-list > li > a span {
+        font-size: 1rem; }
+  /* line 73, D:/temp/mybulma3/css/portfolio.scss */
+  .card ul.event-list {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    /* line 79, D:/temp/mybulma3/css/portfolio.scss */
+    .card ul.event-list .event {
+      position: relative;
+      padding: 0 0 20px 25px; }
+      /* line 80, D:/temp/mybulma3/css/portfolio.scss */
+      .card ul.event-list .event > ul {
+        margin-left: 20px; }
+      /* line 87, D:/temp/mybulma3/css/portfolio.scss */
+      .card ul.event-list .event:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        bottom: -10px;
+        left: 4px;
+        width: 2px;
+        background: #c2c2c2; }
+      /* line 97, D:/temp/mybulma3/css/portfolio.scss */
+      .card ul.event-list .event:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #265CDC; }
+
+/* line 115, D:/temp/mybulma3/css/portfolio.scss */
+.lsk {
+  padding: 30px 0; }
+  /* line 119, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk .progress {
+    margin-bottom: 0.7rem; }
+  /* line 127, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk#sc-2 .portfolio {
+    overflow: hidden;
+    padding-left: 2px;
+    padding-right: 2px; }
+    /* line 132, D:/temp/mybulma3/css/portfolio.scss */
+    .lsk#sc-2 .portfolio .mix {
+      float: left;
+      width: 32%;
+      margin: 0 4px;
+      border: 0;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+      position: relative;
+      backface-visibility: hidden;
+      will-change: transform, opacity;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      transition: translate .18s, box-shadow .18s;
+      cursor: pointer; }
+      /* line 147, D:/temp/mybulma3/css/portfolio.scss */
+      .lsk#sc-2 .portfolio .mix:hover {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6); }
+      /* line 151, D:/temp/mybulma3/css/portfolio.scss */
+      .lsk#sc-2 .portfolio .mix > a {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        text-indent: -9999px; }
+      /* line 162, D:/temp/mybulma3/css/portfolio.scss */
+      .lsk#sc-2 .portfolio .mix img {
+        display: block;
+        max-width: 100%;
+        height: auto; }
+      /* line 168, D:/temp/mybulma3/css/portfolio.scss */
+      .lsk#sc-2 .portfolio .mix .portfolio-description {
+        padding: .5rem; }
+        /* line 171, D:/temp/mybulma3/css/portfolio.scss */
+        .lsk#sc-2 .portfolio .mix .portfolio-description p {
+          line-height: 1.2rem;
+          margin: 0; }
+          /* line 175, D:/temp/mybulma3/css/portfolio.scss */
+          .lsk#sc-2 .portfolio .mix .portfolio-description p.ti-subject {
+            color: #343434;
+            font-weight: bold;
+            margin-bottom: 6px;
+            text-overflow: ellipsis; }
+
+/* line 190, D:/temp/mybulma3/css/portfolio.scss */
+.column .is-danger {
+  overflow: hidden; }
+
+/*
+
+
+body {
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+}
+
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+.hero.is-success {
+	background-color: transparent;
+}
+
+
+*/
+@media (max-width: 1024px) {
+  /* line 259, D:/temp/mybulma3/css/portfolio.scss */
+  .desktop {
+    display: none; } }
+
+@media (max-width: 768px) {
+  /* line 265, D:/temp/mybulma3/css/portfolio.scss */
+  .modal-card {
+    width: 85%; }
+  /* line 268, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk#sc-2 .portfolio .mix {
+    width: 45%;
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media (max-width: 512px) {
+  /* line 277, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk#sc-2 .portfolio .mix {
+    width: 100%;
+    margin: 0;
+    float: none; } }
+
+/*# sourceMappingURL=portfolio.css.map */
