@@ -50,7 +50,7 @@
 		console.log('dd');
 		$(data).each(function (index, value) {
 			var html = '<div class="mix ' + value.category + '" id="ctl-' + value.id + '">';
-			html += '<img src="' + value.img1 + '" alt="">';
+			html += '<div class="thumb-container"><img src="' + value.img1 + '" alt=""></div>';
 			html += '<div class="portfolio-description">';
 			html += '<p class="ti-subject">' + value.title + '</p>';
 			html += '<p class="ti-period">' + value.period + '</p>';
@@ -135,7 +135,7 @@
 		var hours = date.getHours();
 		var minutes = date.getMinutes();
 		var seconds = date.getSeconds();
-		hours = (hours>12) ? hours - 12 : 12;
+		hours = (hours>12) ? hours - 12 : hours;
 		hours = (hours<10) ? '0'+hours : hours;
 		minutes = (minutes<10) ? '0'+minutes : minutes;
 		seconds = (seconds<10) ? '0'+seconds : seconds;

@@ -54,6 +54,9 @@ body {
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+			> li {
+				margin-bottom: 13px;
+			}
 
 			> li > a {
 				border: 1px solid rgba(0, 0, 0, 0);
@@ -119,9 +122,9 @@ body {
 	.progress {
 		margin-bottom: 0.7rem;
 	}
+	.tag {margin-bottom: 10px;}
 
-
-	&#sc-2 {
+	&#portfolio {
 
 		//포트폴리오
 		.portfolio {
@@ -131,11 +134,12 @@ body {
 
 			.mix {
 				float: left;
-				width: 32%;
-				margin: 0 4px;
+				overflow: hidden;
+				width: 31%;
+				margin: 0 8px;
 				border: 0;
 				border-radius: 3px;
-				margin-bottom: 1rem;
+				margin-bottom: 1.6rem;
 				position: relative;
 
 				backface-visibility: hidden;
@@ -159,21 +163,28 @@ body {
 					text-indent: -9999px;
 				}
 
-				img {
+				.thumb-container {
+					overflow: hidden;
+					height: 140px;
+					border-bottom: 1px solid #dddddd;
+					img {
 					display: block;
 					max-width: 100%;
 					height: auto;
-				}
+				 }
+				} 
 
 				.portfolio-description {
-					padding: .5rem;
+					border-top: 1px solid #b9b9b9;
+					padding: 1.2rem .8rem;
 
 					p {
-						line-height: 1.2rem;
+						line-height: 1.4rem;
 						margin: 0;
 
 						&.ti-subject {
 							color: #343434;
+							height: 40px;
 							font-weight: bold;
 							margin-bottom: 6px;
 							text-overflow: ellipsis;
@@ -265,7 +276,7 @@ body {
 	.modal-card {
 		width: 85%;
 	}
-	.lsk#sc-2 .portfolio .mix {
+	.lsk#portfolio .portfolio .mix {
 		width: 45%;
 		margin-left:10px;
 		margin-right:10px;
@@ -274,7 +285,7 @@ body {
 
 @media (max-width: 512px) {
 	
-		.lsk#sc-2 .portfolio .mix {
+		.lsk#portfolio .portfolio .mix {
 		width: 100%;
 		margin: 0;
 			float: none;
