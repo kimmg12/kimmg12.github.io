@@ -1,18 +1,41 @@
 (function ($) {
+		var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
 	$(window).on("load", function () {
 
-		$(".scrollon").mCustomScrollbar({
-			axis: "y",
-			scrollButtons: {
-				enable: true
-			},
-			theme: "minimal-dark",
-			//scrollbarPosition: "outside",
-			setHeight: 640,
-			alwaysShowScrollbar: 2,
-			//	theme:"minimal-dark"
-			//	scrollInertia: 300,
-		});
+		if(!isMobile.any()) {
+			$(".scrollon").mCustomScrollbar({
+				axis: "y",
+				scrollButtons: {
+					enable: true
+				},
+				theme: "minimal-dark",
+				//scrollbarPosition: "outside",
+				setHeight: 640,
+				alwaysShowScrollbar: 2,
+				//	theme:"minimal-dark"
+				//	scrollInertia: 300,
+			});
+
 
 		$("#accordion .panel-body").mCustomScrollbar({
 			setHeight: 300,
@@ -38,7 +61,7 @@
 			}
 		});
 
-
+		}//isMobile
 
 		$('.delete, .modal-background').click(function () {
 			$('.modal').removeClass('is-active');
