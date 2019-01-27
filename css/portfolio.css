@@ -230,16 +230,33 @@ body {
   .modal-card {
     width: 85%; }
   /* line 279, D:/temp/mybulma3/css/portfolio.scss */
-  .lsk#portfolio .portfolio .mix {
-    width: 45%;
-    margin-left: 10px;
-    margin-right: 10px; } }
+  .lsk#portfolio {
+    text-align: center; }
+    /* line 281, D:/temp/mybulma3/css/portfolio.scss */
+    .lsk#portfolio .portfolio .mix {
+      width: 100%;
+      display: inline-block;
+      float: none;
+      overflow: hidden;
+      margin: 0;
+      margin-bottom: 20px; }
+  /* line 291, D:/temp/mybulma3/css/portfolio.scss */
+  .card {
+    height: auto; }
+  /* line 294, D:/temp/mybulma3/css/portfolio.scss */
+  div.content.scrollTo {
+    display: none; } }
 
+/*
 @media (max-width: 512px) {
-  /* line 288, D:/temp/mybulma3/css/portfolio.scss */
-  .lsk#portfolio .portfolio .mix {
-    width: 100%;
-    margin: 0;
-    float: none; } }
+	
+		.lsk#portfolio .portfolio .mix {
+			width: 100%;
+			margin: 0 0 20px 0;
+			float: none;
+	}
+}
+
+*/
 
 /*# sourceMappingURL=portfolio.css.map */

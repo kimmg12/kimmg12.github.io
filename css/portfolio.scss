@@ -276,23 +276,36 @@ body {
 	.modal-card {
 		width: 85%;
 	}
-	.lsk#portfolio .portfolio .mix {
-		width: 45%;
-		margin-left:10px;
-		margin-right:10px;
+	.lsk#portfolio {
+		text-align: center;
+		.portfolio .mix {
+		width: 100%;
+			display: inline-block;
+		float: none;
+		overflow: hidden;
+			margin: 0;
+			margin-bottom: 20px;
 	}
+	} 
+	
+	.card {
+		height: auto;
+	}
+	div.content.scrollTo {display: none;}
 }
 
+
+/*
 @media (max-width: 512px) {
 	
 		.lsk#portfolio .portfolio .mix {
-		width: 100%;
-		margin: 0;
+			width: 100%;
+			margin: 0 0 20px 0;
 			float: none;
 	}
 }
 
-
+*/
 
 
 
