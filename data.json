@@ -10,7 +10,7 @@
     "url": "https://gg.go.kr/",
     "img1": "/img/PF_14.jpg",
     "img2": "/img/id-1-1.png",
-    "img3": "https://via.placeholder.com/150/92c952"
+    "img3": ""
   },
   {
     "id": 2,
@@ -32,7 +32,7 @@
 		"period": "2016.09~2016.10",
     "teck": "워드프레스, 콘텐츠 등록 지원, php, 자바스크립트",
     "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
-		"description": "2016년도 경기도청 외국어 사이트 고도화 작업 입니다. 워드프레스 프레임워크인 underscores 를 사용하여 제작되었습니다. 서브도메인별로 멀티사이트 기능을 이용했습니다.",
+		"description": "2016년도 경기도청 외국어 사이트 고도화 작업 입니다. 워드프레스 프레임워크인 underscores를 사용하여 제작되었습니다. 서브도메인별로 멀티사이트 기능을 이용했습니다.",
     "url": "http://english.gg.go.kr/",
     "img1": "/img/img-10023.jpg",
     "img2": "/img/img-10023.jpg",
@@ -48,21 +48,21 @@
 		"description": "경기도청 대표사이트 리뉴얼 작업(현재)어워드에서 대상 수상. 현재까지 유지 중",
     "url": "https://templated.co/items/thumbnails/radius.jpg",
     "img1": "https://templated.co/items/thumbnails/radius.jpg",
-    "img2": "https://via.placeholder.com/150/92c952",
-    "img3": "https://via.placeholder.com/150/92c952"
+    "img2": "",
+    "img3": ""
   },
   {
     "id": 4,
 		"category": "green",
 		"title": "경기도 감염병관리 홈페이지 구축",
-		"period": "2016.03~2016.09",
+		"period": "2016.10~2017.10",
     "teck": "워드프레스, php, 자바스크립트",
-    "charge": "디자인원안 수정, 기존 퍼블리싱 수정, 리뉴얼에 따른 디자인과 구조변경의 개발 담당, 워드프레스 테마제작",
-		"description": "경기도청 대표사이트 리뉴얼 작업(현재)어워드에서 대상 수상. 현재까지 유지 중",
-    "url": "https://templated.co/promos/thumbnails/cascade.jpg",
+    "charge": "워드프레스 개발업무 및 유지보수에 따른 수정업무",
+		"description": "경기도 감염병관리 홈페이지 구축과 유지보수 업무를 맡았습니다. 구축작업은 디자인과 퍼블은 내부인력으로 준비되었고 워드프레스 테마제작과 개발업무를 맡아서 진행되었습니다. 이후 1년 유지보수 기간동안의 디자인수정과 퍼블수정과 개발부분을 담당하였습니다.",
+    "url": "http://www.gidcc.or.kr/",
     "img1": "/img/PF_21-1.jpg",
-    "img2": "https://via.placeholder.com/150/92c952",
-    "img3": "https://via.placeholder.com/150/92c952"
+    "img2": "/img/dt-21.jpg",
+    "img3": ""
   },
 	{
     "id": 5,
@@ -75,7 +75,7 @@
     "url": "",
     "img1": "/img/tumb-nextstory.jpg",
     "img2": "/img/n123.png",
-    "img3": "https://via.placeholder.com/150/92c952"
+    "img3": ""
   },
 	{
     "id": 52,

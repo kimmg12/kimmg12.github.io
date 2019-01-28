@@ -1,4 +1,5 @@
 (function ($) {
+	var body = $('body');
 		var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -66,6 +67,8 @@
 		$('.delete, .modal-background').click(function () {
 			$('.modal').removeClass('is-active');
 		});
+		
+		$('.loading-spinner').css('display', 'none');
 
 	}); //window on load
 
@@ -104,7 +107,7 @@
 								html += '<p class="tech"><strong>기술:</strong><br>' + val.teck + '</p>';
 								html += '<p class="tech"><strong>담당:</strong><br>' + val.charge + '</p>';
 								html += '<p class="desc"><strong>내용:</strong><br>' + val.description + '</p>';
-								html += (val.url.length != 0) ? '<p class="url"><a href="' + val.url + '" target="_blank">' + val.url + '</a></p>' : '<p>서비스 종료</p>';
+								html += (val.url.length != 0) ? '<p class="url"><strong>링크:</strong><br><a href="' + val.url + '" target="_blank">' + val.url + '</a></p>' : '<p><strong>서비스 종료(중지)</strong></p>';
 								html += (val.img2.length != 0) ? '<p><img src="' + val.img2 + '"></p>' : '';
 								html += (val.img3.length != 0) ? '<p><img src="' + val.img3 + '"></p>' : '';
 								html += '';

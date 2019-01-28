@@ -1,31 +1,32 @@
-/* line 2, D:/temp/mybulma3/css/portfolio.scss */
+@charset "UTF-8";
+/* line 3, D:/temp/mybulma3/css/portfolio.scss */
 html {
   font-size: 14px; }
 
-/* line 6, D:/temp/mybulma3/css/portfolio.scss */
+/* line 7, D:/temp/mybulma3/css/portfolio.scss */
 body {
   background: #ECF0F3; }
 
-/* line 10, D:/temp/mybulma3/css/portfolio.scss */
+/* line 11, D:/temp/mybulma3/css/portfolio.scss */
 .copy {
   line-height: 1;
   text-align: right; }
 
-/* line 16, D:/temp/mybulma3/css/portfolio.scss */
+/* line 17, D:/temp/mybulma3/css/portfolio.scss */
 .icon,
 .is-title-vline {
   line-height: 1; }
 
-/* line 23, D:/temp/mybulma3/css/portfolio.scss */
+/* line 24, D:/temp/mybulma3/css/portfolio.scss */
 .modal {
   transform: scale(0.1);
   opacity: 0;
   transition: all .2s linear; }
-  /* line 28, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 29, D:/temp/mybulma3/css/portfolio.scss */
   .modal.is-active {
     opacity: 1;
     transform: scale(1); }
-  /* line 35, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 36, D:/temp/mybulma3/css/portfolio.scss */
   .modal .modal-card .modal-card-body img {
     display: block;
     width: 100%;
@@ -33,44 +34,58 @@ body {
     border-radius: 3px;
     margin: 20px auto; }
 
-/* line 49, D:/temp/mybulma3/css/portfolio.scss */
+/* line 47, D:/temp/mybulma3/css/portfolio.scss */
+.loading-spinner {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9) url("/img/ajax-loader.gif") 50% 50% no-repeat; }
+
+/* line 57, D:/temp/mybulma3/css/portfolio.scss */
+.columns.main {
+  margin-bottom: 0; }
+
+/* line 62, D:/temp/mybulma3/css/portfolio.scss */
 .card {
   height: 640px; }
-  /* line 53, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 66, D:/temp/mybulma3/css/portfolio.scss */
   .card ul.menu-list {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    /* line 57, D:/temp/mybulma3/css/portfolio.scss */
+    /* line 71, D:/temp/mybulma3/css/portfolio.scss */
     .card ul.menu-list > li {
       margin-bottom: 13px; }
-    /* line 61, D:/temp/mybulma3/css/portfolio.scss */
+    /* line 75, D:/temp/mybulma3/css/portfolio.scss */
     .card ul.menu-list > li > a {
       border: 1px solid transparent;
       border-left: 2px solid #c2c2c2;
       font-size: 1.3rem; }
-      /* line 65, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 80, D:/temp/mybulma3/css/portfolio.scss */
       .card ul.menu-list > li > a:hover {
         border-top: 1px solid #c2c2c2;
         border-bottom: 1px solid #c2c2c2;
         border-right: 1px solid #c2c2c2; }
-      /* line 70, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 86, D:/temp/mybulma3/css/portfolio.scss */
       .card ul.menu-list > li > a span {
         font-size: 1rem; }
-  /* line 76, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 92, D:/temp/mybulma3/css/portfolio.scss */
   .card ul.event-list {
     display: block;
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    /* line 82, D:/temp/mybulma3/css/portfolio.scss */
+    /* line 98, D:/temp/mybulma3/css/portfolio.scss */
     .card ul.event-list .event {
       position: relative;
       padding: 0 0 20px 25px; }
-      /* line 83, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 99, D:/temp/mybulma3/css/portfolio.scss */
       .card ul.event-list .event > ul {
         margin-left: 20px; }
-      /* line 90, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 106, D:/temp/mybulma3/css/portfolio.scss */
       .card ul.event-list .event:before {
         content: "";
         position: absolute;
@@ -79,7 +94,7 @@ body {
         left: 4px;
         width: 2px;
         background: #c2c2c2; }
-      /* line 100, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 116, D:/temp/mybulma3/css/portfolio.scss */
       .card ul.event-list .event:after {
         content: "";
         position: absolute;
@@ -89,22 +104,46 @@ body {
         height: 10px;
         border-radius: 50%;
         background: #265CDC; }
+  /* line 130, D:/temp/mybulma3/css/portfolio.scss */
+  .card .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    /* line 136, D:/temp/mybulma3/css/portfolio.scss */
+    .card .card-footer:before {
+      content: "바로연결하기 버튼";
+      position: absolute;
+      top: -36px;
+      text-align: center;
+      display: inline-block;
+      left: 0;
+      right: 0; }
+    /* line 146, D:/temp/mybulma3/css/portfolio.scss */
+    .card .card-footer a.kakaome {
+      background: url(/img/me_appicon_kr.png) 0 0 no-repeat;
+      text-indent: -9999px;
+      background-position: center;
+      background-size: 20px; }
+    /* line 153, D:/temp/mybulma3/css/portfolio.scss */
+    .card .card-footer a:hover {
+      background-color: #f8ffd5; }
 
-/* line 118, D:/temp/mybulma3/css/portfolio.scss */
+/* line 162, D:/temp/mybulma3/css/portfolio.scss */
 .lsk {
   padding: 30px 0; }
-  /* line 122, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 166, D:/temp/mybulma3/css/portfolio.scss */
   .lsk .progress {
     margin-bottom: 0.7rem; }
-  /* line 125, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 170, D:/temp/mybulma3/css/portfolio.scss */
   .lsk .tag {
     margin-bottom: 10px; }
-  /* line 130, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 177, D:/temp/mybulma3/css/portfolio.scss */
   .lsk#portfolio .portfolio {
     overflow: hidden;
     padding-left: 2px;
     padding-right: 2px; }
-    /* line 135, D:/temp/mybulma3/css/portfolio.scss */
+    /* line 182, D:/temp/mybulma3/css/portfolio.scss */
     .lsk#portfolio .portfolio .mix {
       float: left;
       overflow: hidden;
@@ -119,10 +158,10 @@ body {
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
       transition: translate .18s, box-shadow .18s;
       cursor: pointer; }
-      /* line 151, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 198, D:/temp/mybulma3/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix:hover {
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6); }
-      /* line 155, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 202, D:/temp/mybulma3/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix > a {
         position: absolute;
         display: block;
@@ -132,25 +171,25 @@ body {
         bottom: 0;
         z-index: 999;
         text-indent: -9999px; }
-      /* line 166, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 213, D:/temp/mybulma3/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix .thumb-container {
         overflow: hidden;
         height: 140px;
         border-bottom: 1px solid #dddddd; }
-        /* line 170, D:/temp/mybulma3/css/portfolio.scss */
+        /* line 218, D:/temp/mybulma3/css/portfolio.scss */
         .lsk#portfolio .portfolio .mix .thumb-container img {
           display: block;
           max-width: 100%;
           height: auto; }
-      /* line 177, D:/temp/mybulma3/css/portfolio.scss */
+      /* line 225, D:/temp/mybulma3/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix .portfolio-description {
         border-top: 1px solid #b9b9b9;
         padding: 1.2rem .8rem; }
-        /* line 181, D:/temp/mybulma3/css/portfolio.scss */
+        /* line 229, D:/temp/mybulma3/css/portfolio.scss */
         .lsk#portfolio .portfolio .mix .portfolio-description p {
           line-height: 1.4rem;
           margin: 0; }
-          /* line 185, D:/temp/mybulma3/css/portfolio.scss */
+          /* line 233, D:/temp/mybulma3/css/portfolio.scss */
           .lsk#portfolio .portfolio .mix .portfolio-description p.ti-subject {
             color: #343434;
             height: 40px;
@@ -158,7 +197,7 @@ body {
             margin-bottom: 6px;
             text-overflow: ellipsis; }
 
-/* line 201, D:/temp/mybulma3/css/portfolio.scss */
+/* line 249, D:/temp/mybulma3/css/portfolio.scss */
 .column .is-danger {
   overflow: hidden; }
 
@@ -221,18 +260,51 @@ body {
 
 */
 @media (max-width: 1024px) {
-  /* line 270, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 318, D:/temp/mybulma3/css/portfolio.scss */
   .desktop {
     display: none; } }
 
 @media (max-width: 768px) {
-  /* line 276, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 324, D:/temp/mybulma3/css/portfolio.scss */
+  .hide-mobile {
+    display: none; }
+  /* line 328, D:/temp/mybulma3/css/portfolio.scss */
+  .copy {
+    text-align: center; }
+  /* line 332, D:/temp/mybulma3/css/portfolio.scss */
   .modal-card {
     width: 85%; }
-  /* line 279, D:/temp/mybulma3/css/portfolio.scss */
+  /* line 338, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk#portfolio .portfolio .mix {
+    width: 47%;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 20px; }
+  /* line 346, D:/temp/mybulma3/css/portfolio.scss */
+  .card {
+    height: auto; }
+    /* line 349, D:/temp/mybulma3/css/portfolio.scss */
+    .card .card-image {
+      display: none; }
+    /* line 353, D:/temp/mybulma3/css/portfolio.scss */
+    .card .profile {
+      text-align: center;
+      border-top: 3px solid #00ff45; }
+      /* line 357, D:/temp/mybulma3/css/portfolio.scss */
+      .card .profile h4 {
+        margin-bottom: 50px; }
+    /* line 362, D:/temp/mybulma3/css/portfolio.scss */
+    .card .content.scrollTo {
+      display: none; }
+    /* line 366, D:/temp/mybulma3/css/portfolio.scss */
+    .card .card-footer {
+      margin-top: 30px; } }
+
+@media (max-width: 612px) {
+  /* line 377, D:/temp/mybulma3/css/portfolio.scss */
   .lsk#portfolio {
     text-align: center; }
-    /* line 281, D:/temp/mybulma3/css/portfolio.scss */
+    /* line 380, D:/temp/mybulma3/css/portfolio.scss */
     .lsk#portfolio .portfolio .mix {
       width: 100%;
       display: inline-block;
@@ -240,23 +312,8 @@ body {
       overflow: hidden;
       margin: 0;
       margin-bottom: 20px; }
-  /* line 291, D:/temp/mybulma3/css/portfolio.scss */
-  .card {
-    height: auto; }
-  /* line 294, D:/temp/mybulma3/css/portfolio.scss */
-  div.content.scrollTo {
-    display: none; } }
-
-/*
-@media (max-width: 512px) {
-	
-		.lsk#portfolio .portfolio .mix {
-			width: 100%;
-			margin: 0 0 20px 0;
-			float: none;
-	}
-}
-
-*/
+  /* line 390, D:/temp/mybulma3/css/portfolio.scss */
+  .lsk#portfolio .portfolio .mix .thumb-container img {
+    width: 100%; } }
 
 /*# sourceMappingURL=portfolio.css.map */

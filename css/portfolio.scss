@@ -1,4 +1,5 @@
 $grey_border: #c2c2c2;
+
 html {
 	font-size: 14px;
 }
@@ -29,7 +30,7 @@ body {
 		opacity: 1;
 		transform: scale(1);
 	}
-	
+
 	.modal-card {
 		.modal-card-body {
 			img {
@@ -43,7 +44,19 @@ body {
 	}
 }
 
+.loading-spinner {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .9) url('/img/ajax-loader.gif') 50% 50% no-repeat;
+}
 
+.columns.main {
+	margin-bottom: 0;
+}
 
 //Layout Card
 .card {
@@ -54,6 +67,7 @@ body {
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+
 			> li {
 				margin-bottom: 13px;
 			}
@@ -62,11 +76,13 @@ body {
 				border: 1px solid rgba(0, 0, 0, 0);
 				border-left: 2px solid $grey_border;
 				font-size: 1.3rem;
+
 				&:hover {
 					border-top: 1px solid $grey_border;
 					border-bottom: 1px solid $grey_border;
 					border-right: 1px solid $grey_border;
 				}
+
 				span {
 					font-size: 1rem;
 				}
@@ -110,6 +126,34 @@ body {
 			}
 		}
 	}
+
+	.card-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		&:before {
+			content: "바로연결하기 버튼";
+			position: absolute;
+			top: -36px;
+			text-align: center;
+			display: inline-block;
+			left: 0;
+			right: 0;
+		}
+
+		a.kakaome {
+			background: url(/img/me_appicon_kr.png) 0 0 no-repeat;
+			text-indent: -9999px;
+			background-position: center;
+			background-size: 20px;
+		}
+
+		a:hover {
+			background-color: #f8ffd5;
+		}
+	}
 }
 
 
@@ -122,7 +166,10 @@ body {
 	.progress {
 		margin-bottom: 0.7rem;
 	}
-	.tag {margin-bottom: 10px;}
+
+	.tag {
+		margin-bottom: 10px;
+	}
 
 	&#portfolio {
 
@@ -167,12 +214,13 @@ body {
 					overflow: hidden;
 					height: 140px;
 					border-bottom: 1px solid #dddddd;
+
 					img {
-					display: block;
-					max-width: 100%;
-					height: auto;
-				 }
-				} 
+						display: block;
+						max-width: 100%;
+						height: auto;
+					}
+				}
 
 				.portfolio-description {
 					border-top: 1px solid #b9b9b9;
@@ -273,51 +321,73 @@ body {
 }
 
 @media (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+
+	.copy {
+		text-align: center;
+	}
+
 	.modal-card {
 		width: 85%;
 	}
+
 	.lsk#portfolio {
-		text-align: center;
+
 		.portfolio .mix {
-		width: 100%;
+			width: 47%;
 			display: inline-block;
-		float: none;
-		overflow: hidden;
-			margin: 0;
+			overflow: hidden;
 			margin-bottom: 20px;
+		}
 	}
-	} 
-	
+
 	.card {
 		height: auto;
+
+		.card-image {
+			display: none;
+		}
+
+		.profile {
+			text-align: center;
+			border-top: 3px solid #00ff45;
+
+			h4 {
+				margin-bottom: 50px;
+			}
+		}
+
+		.content.scrollTo {
+			display: none;
+		}
+
+		.card-footer {
+			margin-top: 30px;
+		}
+
 	}
-	div.content.scrollTo {display: none;}
 }
 
 
-/*
-@media (max-width: 512px) {
-	
-		.lsk#portfolio .portfolio .mix {
+
+@media (max-width: 612px) {
+
+	.lsk#portfolio {
+		text-align: center;
+
+		.portfolio .mix {
 			width: 100%;
-			margin: 0 0 20px 0;
+			display: inline-block;
 			float: none;
+			overflow: hidden;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	.lsk#portfolio .portfolio .mix .thumb-container img {
+		width: 100%;
 	}
 }
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
